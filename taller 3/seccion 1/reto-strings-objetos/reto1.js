@@ -30,6 +30,22 @@ users['name'] = shortNameComplete
 users['email'] = email
 console.log(users)
 
+// verifica si nombre existe en el objeto
+
+let validateName = Object.values(users)
+console.log(validateName.includes('alevel'))
+if (validateName) {
+    users['name'] = shortNameComplete + 1
+    users['email'] = shortNameComplete + 1 + dominio
+    // shortNameComplete = shortNameComplete + 1
+    // email = shortNameComplete + 1 + dominio
+} else {
+    console.log('el nombre no se repite')
+}
+
+console.log(users)
+
+
 
 // nameUserArray.forEach(element => {
 //     nameShort = element.slice(0, 3)
