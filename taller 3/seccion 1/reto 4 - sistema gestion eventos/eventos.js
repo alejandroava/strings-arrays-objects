@@ -15,13 +15,18 @@ let inputDateDay;
 let inputDateMonth;
 let inputDateYear;
 
-let inputNameEvent = prompt('¿Cual es eñ nombre del evento')
+const creationEvent = () => {
+    
+}
+
+let inputNameEvent = prompt('¿Cual es el nombre del evento')
 let nameEvent = inputNameEvent.trim()
+
 while (true) {
    
     inputDateDay = prompt(`¿Dia del evento ${inputNameEvent}: `)
     
-    if (inputDateDay == Number && inputDateDay >= 1 || inputDateDay <= 31) {
+    if (inputDateDay == Number && inputDateDay > 1 || inputDateDay <= 31) {
         inputDateMonth = prompt('Mes: ')
         if (inputDateMonth == Number && inputDateMonth > 1 || inputDateMonth <= 12) {
             inputDateYear = prompt('Año: ')
